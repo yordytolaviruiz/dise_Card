@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Card component demostrando el Box Model de CSS">
+    <title>Card Component | Box Model</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-title">Productos Destacados</h1>
+        <p class="subtitle">Estudiate: Yordy Tolavi</p>  
+        <p class="subtitle">Ejemplo de Card Component usando Box Model</p>
+        
+        <!-- Grid de Cards -->
+        <div class="cards-grid">
+            
+            <!-- Card 1 -->
+            <article class="card">
+                <div class="card-image">
+                    <img src="imagen/after.png" alt="Chocolatina After Eight">
+                    <span class="badge">Nuevo</span>
+                </div>
+                <div class="card-content">
+                    <h2 class="card-title">After Eight 300g</h2>
+                    <p class="card-price">
+                        <span class="price-current">BS 235.00</span>
+                        <span class="price-old">BS 280.00</span>
+                    </p>
+                    <p class="card-description">
+                        Chocolatina producida por Nestlé, que consiste en crema 
+                        de menta cubierta por una capa cuadrada de chocolate negro, que forma una lámina.
+                    </p>
+                    <div class="card-footer">
+                        <button class="btn-primary">Añadir al Carrito</button>
+                        <button class="btn-secondary">Ver Detalles</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="card">
+                <div class="card-image">
+                    <img src="imagen/donofrioPan.png" alt="Paneton D’Onofrio 880g">
+                    <span class="badge badge-sale">-20%</span>
+                </div>
+                <div class="card-content">
+                    <h2 class="card-title">Paneton D’Onofrio 880g</h2>
+                    <p class="card-price">
+                        <span class="price-current">BS 151.99</span>
+                        <span class="price-old">BS 199.99</span>
+                    </p>
+                    <p class="card-description">
+                        Panetón D’Onofrio recientemente presentó su última campaña La Magia Está Adentro, con el objetivo
+                         de acompañar a los Bolivianos en las celebraciones navideñas que se acercan.
+                    </p>
+                    <div class="card-footer">
+                        <button class="btn-primary">Añadir al Carrito</button>
+                        <button class="btn-secondary">Ver Detalles</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="card">
+                <div class="card-image">
+                    <img src="imagen/nescafegold.png" alt="Nescafe Gold 100g">
+                </div>
+                <div class="card-content">
+                    <h2 class="card-title">Nescafe Gold 100g</h2>
+                    <p class="card-price">
+                        <span class="price-current">BS 106.59</span>
+                    </p>
+                    <p class="card-description">
+                        Nescafe Gold es un café premium con un sabor suave, 
+                        Los granos que se utilizan en él son diez veces más finos que el café instantáneo común, 
+                        algo que percibirás en el sabor y la textura, como en el aroma.
+                    </p>
+                    <div class="card-footer">
+                        <button class="btn-primary">Añadir al Carrito</button>
+                        <button class="btn-secondary">Ver Detalles</button>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+        <!-- Explicación del Box Model -->
+        <div class="box-model-explanation">
+            <h2>🎯 Box Model Aplicado en estas Cards</h2>
+            <div class="explanation-grid">
+                <div class="explanation-item">
+                    <h3>📦 Content</h3>
+                    <p>Imagen, título, precio, descripción y botones</p>
+                </div>
+                <div class="explanation-item">
+                    <h3>📏 Padding</h3>
+                    <p>20px en card-content para dar aire al contenido</p>
+                </div>
+                <div class="explanation-item">
+                    <h3>🖼️ Border</h3>
+                    <p>1px solid con border-radius de 12px</p>
+                </div>
+                <div class="explanation-item">
+                    <h3>🌌 Margin</h3>
+                    <p>Gap de 20px entre cards (usando CSS Grid)</p>
+                </div>
+                <div class="explanation-item">
+                    <h3>📐 Box-Sizing</h3>
+                    <p>border-box para width predecible de 300px</p>
+                </div>
+                <div class="explanation-item">
+                    <h3>🎨 Box-Shadow</h3>
+                    <p>Sombra sutil que se intensifica con hover</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
